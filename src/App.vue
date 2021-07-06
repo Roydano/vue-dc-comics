@@ -2,12 +2,12 @@
   <div id="app">
     <Header/>
 
-    <!-- <main>
+    <main>
       <Content/>
-      <ShopAction/>
+      <!-- <ShopAction/> -->
     </main>
 
-    <footer>
+    <!-- <footer>
       <FooterTop/>
       <FooterBottom/>
     </footer> -->
@@ -16,16 +16,19 @@
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Header from './components/Header.vue';
+import Content from './components/Content.vue'
+
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Content
   }
 }
 </script>
 
 <style lang="scss">
-  @import 'style/commons.scss'
+  @import 'style/commons.scss';
 </style>
