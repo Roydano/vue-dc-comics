@@ -1,13 +1,13 @@
 <template>
   <header>
-      <div class="container">
+      <div class="container flex">
           
           <a href="#">
               <img src="../assets/img/dc-logo.png" alt="logo dc-comics">
           </a>
 
           <ul>
-              <li v-for="(link, index) in linkMenu" :key="index"><a href="link.url">{{link.text}}</a></li>
+              <li v-for="(link, index) in linkMenu" :key="index"><a href="link.url" :class="{active: link.current}">{{link.text}}</a></li>
           </ul>
 
       </div>
@@ -77,5 +77,53 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import '../style/var.scss';
+
+    header{
+        height: 80px;
+    }
+
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    img{
+        padding: 10px;
+        width: 60%;
+    }
+
+    li{
+        list-style: none;
+        display: inline-block;
+        padding: 10px;
+
+        a{
+        padding-bottom: 27px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+        color: $terziary-color;
+
+            &:hover{
+                color: $primary-color;
+            }
+
+            &.active{
+                color: $primary-color;
+                border-bottom: 5px solid $primary-color;
+            }
+        }
+
+    }
+    
+
+    
+
+
+
 
 </style>
