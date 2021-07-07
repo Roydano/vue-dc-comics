@@ -69,12 +69,13 @@ export default {
     section{
         background-color: $primary-color;
         text-align: center;
-        height: 100px;
+        height: 120px;
     }
 
     .flex{
         display: flex;
         height: 100%;
+        justify-content: space-between;
     }
 
     .action{
@@ -87,7 +88,7 @@ export default {
 
         a{
 
-        line-height: 100px;
+        line-height: 120px;
         text-decoration: none;
         text-transform: uppercase;
         font-size: 12px;

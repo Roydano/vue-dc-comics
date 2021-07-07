@@ -9,7 +9,7 @@
 
     <footer>
       <FooterTop/>
-      <!-- <FooterBottom/> -->
+      <FooterBottom/>
     </footer>
 
   </div>
@@ -20,6 +20,8 @@
   import Content from './components/Content.vue';
   import ShopAction from './components/ShopAction.vue';
   import FooterTop from './components/FooterTop.vue';
+  import FooterBottom from './components/FooterBottom.vue';
+
 
 
 
@@ -30,7 +32,8 @@ export default {
     Header,
     Content,
     ShopAction,
-    FooterTop
+    FooterTop,
+    FooterBottom
   }
 }
 </script>
