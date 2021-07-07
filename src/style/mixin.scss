@@ -1,0 +1,9 @@
+@mixin button($bg, $fnt){
+    background-color: $bg;
+    color: white;
+    font-size: $fnt;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+
+}

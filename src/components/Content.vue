@@ -40,6 +40,7 @@ export default {
 
 <style lang="scss" scoped>
     @import '../style/var.scss';
+    @import '../style/mixin.scss';
 
     section{
         background-color: $black-ground;
@@ -49,6 +50,19 @@ export default {
             height: 400px;
             background-image: url(../assets/img/jumbotron.jpg);
             background-size: cover;
+        }
+
+        .btn-series{
+            position: relative;
+            button{
+                padding: 10px 20px;
+                position: absolute;
+                top: -20px;
+                left: 220px;
+                @include button($primary-color, 16px)
+
+            }
+
         }
 
         .flex{
@@ -71,6 +85,11 @@ export default {
             display: flex;
             justify-content: center;
             padding: 15px;
+            button{
+                padding: 10px 35px;
+                @include button($primary-color, 10px)
+                
+            }
         }
     }
 

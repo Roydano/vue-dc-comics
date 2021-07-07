@@ -77,6 +77,7 @@ export default {
             color: white;
             background-color: $footer-bg;
             border-color: $primary-color;
+            cursor: pointer;
         }
 
         .flex{

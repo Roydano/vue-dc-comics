@@ -53,6 +53,7 @@ export default {
     },
     
     methods: {
+        //?funzione per fare leggere il percorso delle immagini dal webpack
         getCard(card) {
             return require('../assets/'+ card);
         }
