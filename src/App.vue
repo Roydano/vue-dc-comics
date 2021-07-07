@@ -7,10 +7,10 @@
       <ShopAction/>
     </main>
 
-    <!-- <footer>
+    <footer>
       <FooterTop/>
-      <FooterBottom/>
-    </footer> -->
+      <!-- <FooterBottom/> -->
+    </footer>
 
   </div>
 </template>
@@ -19,6 +19,8 @@
   import Header from './components/Header.vue';
   import Content from './components/Content.vue';
   import ShopAction from './components/ShopAction.vue';
+  import FooterTop from './components/FooterTop.vue';
+
 
 
 
@@ -27,7 +29,8 @@ export default {
   components: {
     Header,
     Content,
-    ShopAction
+    ShopAction,
+    FooterTop
   }
 }
 </script>
