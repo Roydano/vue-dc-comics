@@ -165,6 +165,7 @@ export default {
        .link-list{
            padding: 20px 0 60px;
            margin-right: 30px;
+           width: 100%;
            
             h3{
             color: white;
