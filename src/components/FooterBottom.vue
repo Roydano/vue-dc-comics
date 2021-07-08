@@ -100,6 +100,7 @@ export default {
 
             img{
                 padding: 0 10px;
+                cursor: pointer;
             }
         }
     }
